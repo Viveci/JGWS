@@ -1,0 +1,64 @@
+package utility.collection;
+
+public class BoundedArrayQueue<T> implements QueueADT<T>{
+   
+   private int front;
+   private int count;
+   private T[] queue;
+
+   public  BoundedArrayQueue(){
+      this.count = 0;
+      this.front = 0;
+      this.queue = (T[]) new Object[10];
+   }
+   
+   public  BoundedArrayQueue(int capacity){
+      this.count = 0;
+      this.front = 0;
+      this.queue = (T[]) new Object[capacity];
+   }
+   
+   public String toString(){
+      return null;
+   }
+   
+   public void enqueue(){
+      
+   }
+
+   @Override
+   public Object dequeue()
+   {
+      // TODO Auto-generated method stub
+      return null;
+   }
+
+   @Override
+   public Object frist()
+   {
+      // TODO Auto-generated method stub
+      return null;
+   }
+
+   @Override
+   public int indexOf()
+   {
+      // TODO Auto-generated method stub
+      return 0;
+   }
+
+   @Override
+   public boolean isEmpty()
+   {
+      // TODO Auto-generated method stub
+      return false;
+   }
+
+   @Override
+   public int size()
+   {
+      // TODO Auto-generated method stub
+      return 0;
+   }
+
+}

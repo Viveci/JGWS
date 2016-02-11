@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;htmlpoints.java&apos; to &apos;Session11/src/HTMLBulletpoints&apos;&#x0D;&#x0A;- Original project: &apos;Exercise8_5&apos;&#x0D;&#x0A;- Destination element: &apos;Session11/src/HTMLBulletpoints&apos;&#x0D;&#x0A;- Original element: &apos;htmlpoints.java&apos;" description="Copy compilation unit" destination="=Session11/src&lt;HTMLBulletpoints" element1="/src&lt;{htmlpoints.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1442564759354" units="1" version="1.0"/>
+</session>

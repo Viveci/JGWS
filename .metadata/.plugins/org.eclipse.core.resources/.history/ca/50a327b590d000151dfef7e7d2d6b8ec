@@ -1,0 +1,89 @@
+
+
+public class ArrayStack<T> implements StackADT{
+   
+   private static int DEFAULT_CAPACITY = 100;
+   private int top;
+   private T[] stack;
+   
+   public ArrayStack(){
+      top = 0;
+      stack = (T[]) new Object[DEFAULT_CAPACITY];
+   }
+   
+   public ArrayStack(int cap){
+      top = 0;
+      stack = (T[]) new Object[cap];
+   }
+
+   @Override
+   public void push(Object element)throws IllegalStateException, IllegalArgumentException{
+      if(isEmpty()){
+         throw new IllegalStateException("The stack is empty");
+      }
+      else if(top>stack.length){
+         expandArray();
+      }
+      else if(element == null){
+         throw new IllegalArgumentException("The element is null");
+      }
+      stack[top]=(T) element;
+      top++;
+   }
+   
+   private void expandArray(){
+      T[] nw = (T[]) new Object[(stack.length*2)];
+      for(int i = 0; i < top; i++){
+         nw[i] = stack[i];
+      }
+      stack = nw;
+   }
+
+   @Override
+   public T pop()throws IllegalStateException {
+      if(isEmpty()){
+         throw new IllegalStateException("The stack is empty");
+      }
+      top--;
+      T rtrn = stack[top];
+      stack[top] = null;
+      return rtrn;
+   }
+
+   @Override
+   public T peek()throws IllegalStateException{
+      if(isEmpty()){
+         throw new IllegalStateException("The stack is empty");
+      }
+      return stack[top-1];
+   }
+
+   @Override
+   public int indexOf(Object element)throws IllegalArgumentException,
+   IllegalStateException{
+      int rtrn = -1;
+      if(element == null){
+         throw new IllegalArgumentException("The element is null");
+      }
+      else if(isEmpty()){
+         throw new IllegalStateException("The stack is null");
+      }
+      for(int i = 0; i < top; i++){
+         if(stack[i].equals(element)){
+            rtrn = i;
+         }
+      }
+      return rtrn;
+   }
+
+   @Override
+   public boolean isEmpty(){
+      return (top==0);
+   }
+
+   @Override
+   public int size(){
+      return top;
+   }
+
+}

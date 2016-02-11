@@ -1,0 +1,27 @@
+package utility.collection;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class BoundedArrayQueueTest{
+   
+   private BoundedArrayQueue<String> queue;
+
+   @Before
+   public void setUp() throws Exception{
+      queue = new BoundedArrayQueue<>(5);
+   }
+
+   @After
+   public void tearDown() throws Exception{
+   }
+
+   @Test
+   public void testEnqueue(){
+      queue.enqueue("first");
+   }
+
+}

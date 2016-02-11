@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;PhoneCall.java&apos; to &apos;Exercise5_3/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;Exercise9_2&apos;&#x0D;&#x0A;- Destination element: &apos;Exercise5_3/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;PhoneCall.java&apos;" description="Copy compilation unit" destination="=Exercise5_3/src&lt;" element1="/src&lt;{PhoneCall.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1442223448709" units="1" version="1.0"/>
+</session>
