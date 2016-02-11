@@ -59,7 +59,7 @@ public class BoundedArrayQueue<T> implements QueueADT<T>{
          throw new IllegalArgumentException("The argument cannot be null");
       }
          for(int i = 0; i < count; i++){
-            if(element.equals(queue[((front+i)%queue.length)])){
+            if(element.equals(queue[((front+i)%queue.length])){
                return i;
             }
          }

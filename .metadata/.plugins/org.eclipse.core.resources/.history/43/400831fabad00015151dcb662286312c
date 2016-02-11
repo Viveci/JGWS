@@ -29,7 +29,7 @@ public class BoundedArrayQueueTest{
       queue.dequeue();
       
       
-      assertEquals(3,queue.indexOf("fifth"));
+      assertEquals(4,queue.indexOf("fifth"));
    }
 
 }

@@ -26,10 +26,8 @@ public class BoundedArrayQueueTest{
       queue.enqueue("third");
       queue.enqueue("fourth");
       queue.enqueue("fifth");
-      queue.dequeue();
       
-      
-      assertEquals(3,queue.indexOf("fifth"));
+      assertEquals(2,queue.indexOf("third"));
    }
 
 }
