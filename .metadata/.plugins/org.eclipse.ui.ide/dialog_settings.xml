@@ -5,6 +5,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Dev\JGWS\Session_03"/>
 			<item value="C:\Dev\JGWS\GroundZero"/>
 			<item value="D:\VIA ICT\SDJ\JavaWorkspace\SEP_01"/>
 		</list>
