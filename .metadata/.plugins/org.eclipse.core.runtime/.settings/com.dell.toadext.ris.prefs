@@ -1,6 +1,11 @@
 eclipse.preferences.version=1
 toadext.instance.id=8c8a6725-1f8a-44e6-92c5-0d9c710fde06
+<<<<<<< HEAD
 toadext.machine.id=480c93ab-ed6f-405c-a8e8-516aa65140eb
 toadext.start.day=12
+=======
+toadext.machine.id=6180be56-e024-46a4-8c4d-03b04deeaf67
+toadext.start.day=11
+>>>>>>> origin/master
 toadext.start.month=1
 toadext.start.year=2016
