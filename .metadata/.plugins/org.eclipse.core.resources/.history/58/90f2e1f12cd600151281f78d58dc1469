@@ -1,0 +1,20 @@
+package utility.collection;
+
+public class MultiNode<T>{
+
+   private T data;
+   private MultiNode<T> next;
+   private MultiNode<T> previous;
+   
+   public MultiNode(){
+      this.element = null;
+      next = null;
+      previous = null;
+   }
+   
+   public MultiNode(T element){
+      this.data = (T) new Object();
+   }
+   
+   
+}

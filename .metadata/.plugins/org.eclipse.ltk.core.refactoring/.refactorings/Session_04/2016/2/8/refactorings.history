@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;utility.collection.MultiNode&apos; to &apos;DoubleNode&apos;&#x0D;&#x0A;- Original project: &apos;Session_04&apos;&#x0D;&#x0A;- Original element: &apos;utility.collection.MultiNode&apos;&#x0D;&#x0A;- Renamed element: &apos;utility.collection.DoubleNode&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MultiNode&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;utility.collection{MultiNode.java[MultiNode" matchStrategy="1" name="DoubleNode" qualified="false" references="true" similarDeclarations="false" stamp="1455796146319" textual="false" version="1.0"/>
+</session>

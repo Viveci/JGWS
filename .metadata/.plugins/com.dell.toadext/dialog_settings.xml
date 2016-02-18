@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="OpenRecentFiles">
+		<item value="D:\VIA ICT\RDBS\Worksheet 2.sql"/>
 		<item value="D:\VIA ICT\RDBS\Worksheet 1.sql"/>
 	</list>
 	<section name="com.dell.toadext.history.actions.HideUnpinnedHistoryItemsAction">
@@ -40,14 +41,14 @@
 		</section>
 	</section>
 	<section name="com.dell.toadext.connection.monitor.AbstractConnectionMonitorView$EnableAction">
-		<item value="false" key="active"/>
+		<item value="true" key="active"/>
 	</section>
 	<section name="com.dell.toadext.schemabrowser.actions.DisplayDescribeObjectEditorAction">
 		<item value="false" key="active"/>
 	</section>
 	<section name="com.dell.toadext.editor.SqlEditor">
 		<section name="saveToFile">
-			<item value="D:\VIA ICT\RDBS\Worksheet 1.sql" key="filename"/>
+			<item value="D:\VIA ICT\RDBS\Worksheet 2.sql" key="filename"/>
 			<item value="D:\VIA ICT\RDBS" key="pathname"/>
 		</section>
 	</section>
@@ -87,8 +88,8 @@
 	</section>
 	<section name="com.dell.toadext.postgre.ui.editor.PgEditorExtension">
 		<section name="editorWeights">
-			<item value="55" key="rsWeight"/>
-			<item value="944" key="editorWeight"/>
+			<item value="352" key="rsWeight"/>
+			<item value="647" key="editorWeight"/>
 		</section>
 	</section>
 	<section name="com.dell.toadext.detailbrowser.AbstractColumnsViewer$SortColumnsAction">

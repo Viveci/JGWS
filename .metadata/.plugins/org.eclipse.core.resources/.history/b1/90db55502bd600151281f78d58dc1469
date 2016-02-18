@@ -1,0 +1,11 @@
+package utility.collection;
+
+public interface ListADT<T>{
+
+   public void add(T element);
+   
+   public void add(int index, T element);
+   
+   
+   
+}

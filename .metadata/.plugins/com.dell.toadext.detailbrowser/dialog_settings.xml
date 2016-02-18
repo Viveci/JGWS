@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.dell.toadext.postgre.detailviewer.PgQueryResultViewer">
+		<section name="3e8a33ab-3889-4c30-aa80-f3bd7a63bbe7#employee">
+			<item value="" key="where"/>
+			<list key="whereHistory">
+			</list>
+			<list key="hidden">
+			</list>
+			<list key="order">
+			</list>
+		</section>
+	</section>
+	<section name="com.dell.toadext.postgre.detailviewer.PgTableDataViewer">
+		<section name="3e8a33ab-3889-4c30-aa80-f3bd7a63bbe7#starcompany.employee">
+			<item value=",,,,,,," key="col.widths"/>
+		</section>
+	</section>
+</section>

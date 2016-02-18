@@ -1,0 +1,23 @@
+package utility.math;
+
+public class NaturalNumber{
+
+   private int value;
+   
+   public NaturalNumber(int value){
+      this.value = value;
+   }
+   
+   public void setValue(int value){
+      this.value = value;
+   }
+   
+   public int getValue(){
+      return this.value;
+   }
+   
+   public String toString(){
+      return "The value is: "+this.value;
+   }
+   
+}
