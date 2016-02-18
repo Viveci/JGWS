@@ -13,11 +13,13 @@ public class DoubleNode<T>{
    }
    
    public DoubleNode(T element){
-      this.element = (T) new Object();
+      this.element = element;
+      next = null;
+      previous = null;
    }
    
    public DoubleNode(T element,DoubleNode<T> next,DoubleNode<T>prev){
-      this.element = (T) new Object();
+      this.element = element;
       this.next = next;
       this.previous = prev;
    }
@@ -37,7 +39,7 @@ public class DoubleNode<T>{
    public void setPrevious(DoubleNode<T> previous){
       this.previous = previous;
    }
-   
+      
    public T getElement(){
       return this.element;
    }

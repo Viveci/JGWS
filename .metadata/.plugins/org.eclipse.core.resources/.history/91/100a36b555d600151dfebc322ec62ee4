@@ -1,0 +1,117 @@
+package utility.collection;
+
+public class LinkedList<T> implements ListADT<T>{
+   
+   private int count;
+   private DoubleNode<T> list;
+   
+   public LinkedList(){
+      count = 0;
+      list = new DoubleNode<T>();
+   }
+
+   public void add(T element){
+      if(count == 0){
+         list = new DoubleNode<>(element);
+         count++;
+         System.out.println("Count " + count);
+      }
+      else{
+         add(count,element);
+      }
+   }
+   
+   @Override
+   public void add(int index, T element){
+         if (index < 0 || index > count){
+            throw new IndexOutOfBoundsException();
+      }
+      if (index == 0){
+         list = new DoubleNode<T>(element,null,null);
+      }
+      else{
+         DoubleNode<T> temp = getNode(index-1);
+         if(temp.getNext()!=null){
+            DoubleNode<T> next = temp.getNext();
+            DoubleNode<T> current = new DoubleNode<T>(element,temp.getNext(),temp);
+            next.setPrevious(current);
+            temp.setNext(current);
+            System.out.println("Else a" + count);
+         }
+         else{
+            temp.setNext(new DoubleNode<>(element,null,temp));
+            System.out.println("Else b" + count);
+         }
+      }
+      count++;
+   }
+
+   @Override
+   public void set(int index, T element){
+      if(index < count && count > 0){
+         DoubleNode<T> temp = getNode(index);
+         temp.setElement(element);
+      }      
+   }
+
+   @Override
+   public T get(int index){
+      return getNode(index).getElement();
+   }
+
+   @Override
+   public T remove(int index){
+      DoubleNode<T> temp = getNode(index);
+      DoubleNode<T> pre = temp.getPrevious();
+      pre.setNext(null);
+      count--;
+      return temp.getElement();
+   }
+
+   @Override
+   public T remove(T element){
+      DoubleNode<T> temp = getNode(indexOf(element));
+      DoubleNode<T> pre = temp.getPrevious();
+      pre.setNext(null);
+      count--;
+      return temp.getElement();
+   }
+
+   @Override
+   public int indexOf(T element){
+      DoubleNode<T> temp = list;
+      int counter = 0,rtrn = -1;
+      while(temp!=null){
+         if(temp.getElement().equals(element)){
+            rtrn = counter;
+         }
+         temp = temp.getNext();
+         counter++;
+      }
+      return rtrn;
+   }
+
+   @Override
+   public boolean contains(T element){
+      return (indexOf(element)!=-1);
+   }
+
+   @Override
+   public boolean isEmpty(){
+      return (count <= 0);
+   }
+
+   @Override
+   public int size(){
+      return count;
+   }
+   
+   private DoubleNode<T> getNode(int index){
+      DoubleNode<T> current = list;
+      for(int i = 0; i < index; i++){
+         current = current.getNext();
+         }
+      return current;
+      }
+
+}

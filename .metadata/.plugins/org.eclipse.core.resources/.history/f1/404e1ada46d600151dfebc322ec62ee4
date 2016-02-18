@@ -1,0 +1,52 @@
+package utility.collection;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class LinkedListTest
+{
+
+   public static LinkedList<String> list;
+   
+   @Before
+   public void setUp() throws Exception{
+      list = new LinkedList<>();
+   }
+
+   @After
+   public void tearDown() throws Exception{
+   }
+   
+   @Test
+   public void testEmpty(){
+      assertEquals(true,list.isEmpty());
+      list.add("asd");
+      assertEquals(false,list.isEmpty());
+      list.remove("asd");
+      assertEquals(true,list.isEmpty());
+   }
+
+   @Test
+   public void testSize(){
+      list.add("asd");
+      list.add("asd");
+      list.add("asd");
+      list.add("asd");
+      list.add("asd");
+      list.add("asd");
+      assertEquals(6,list.size());
+   }
+   
+   @Test
+   public void testContains(){
+      list.add("asd");
+      list.add("dsa");
+      assertEquals(true, list.contains("asd"));
+      assertEquals(true, list.contains("dsa"));
+      assertEquals(false, list.contains("sss"));
+   }
+
+}

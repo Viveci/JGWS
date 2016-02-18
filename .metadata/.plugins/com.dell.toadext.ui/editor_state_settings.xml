@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="EDITOR_PROPERTIES">
-	<item value="&lt;list&gt;&#x0A;  &lt;EDITOR__PROPERTIES&gt;&#x0A;    &lt;connectionUuid&gt;3e8a33ab-3889-4c30-aa80-f3bd7a63bbe7&lt;/connectionUuid&gt;&#x0A;    &lt;dbPlatformId&gt;POSTGRESQL_9_1&lt;/dbPlatformId&gt;&#x0A;    &lt;editorUri&gt;file:/D:/VIA%20ICT/RDBS/Worksheet%202.sql&lt;/editorUri&gt;&#x0A;    &lt;outer-class&gt;&#x0A;      &lt;editorPropertiesList reference=&quot;../../..&quot;/&gt;&#x0A;      &lt;isRestoring&gt;false&lt;/isRestoring&gt;&#x0A;      &lt;runnable&gt;&#x0A;        &lt;activeEditorIndex&gt;0&lt;/activeEditorIndex&gt;&#x0A;        &lt;connections/&gt;&#x0A;        &lt;openedEditorsCount&gt;0&lt;/openedEditorsCount&gt;&#x0A;        &lt;restoredOk&gt;false&lt;/restoredOk&gt;&#x0A;      &lt;/runnable&gt;&#x0A;    &lt;/outer-class&gt;&#x0A;  &lt;/EDITOR__PROPERTIES&gt;&#x0A;&lt;/list&gt;" key="EDITOR_PROPERTIES"/>
+	<item value="&lt;list/&gt;" key="EDITOR_PROPERTIES"/>
 </section>
