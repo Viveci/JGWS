@@ -24,11 +24,9 @@ public class PowerFunction{
    
    private static long formula2Power(long x, int n){
       if((n % 2)==0){
-         System.out.println("even");
          return sqr(power(x,n/2));
       }
       else{
-         System.out.println("odd");
          return power(x,n);
       }
    }
@@ -40,7 +38,7 @@ public class PowerFunction{
    public static void main(String[] args){
       
       long x = 3;
-      int n = 5;
+      int n = 0;
       
       System.out.println(Math.pow(x, n));
       System.out.println(power(x,n));

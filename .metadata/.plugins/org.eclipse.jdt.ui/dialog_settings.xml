@@ -8,8 +8,8 @@
 	<item value="1" key="SearchScopeActionGroup.search_scope_type"/>
 	<item value="500" key="CallHierarchyViewPart.ratio3"/>
 	<list key="workingset_selection_history">
-		<item value="SDJ_2"/>
 		<item value="AJP_1"/>
+		<item value="SDJ_2"/>
 	</list>
 	<list key="SearchScopeActionGroup.working_set">
 	</list>

@@ -1,0 +1,27 @@
+package search;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class SearchTest
+{
+
+   @Before
+   public void setUp() throws Exception{;
+   }
+
+   @After
+   public void tearDown() throws Exception
+   {
+   }
+
+   @Test
+   public void testLoop(){
+      int[] a = new int[]{10,11,16,19,20,21,22};
+      assertEquals(1,Dictionary.binarySearch(16, a,0,a.length));
+   }
+
+}

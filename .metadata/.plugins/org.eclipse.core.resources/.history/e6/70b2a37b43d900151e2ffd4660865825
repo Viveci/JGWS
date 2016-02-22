@@ -1,0 +1,28 @@
+package search;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class SearchTest
+{
+
+   @Before
+   public void setUp() throws Exception{
+      Dictionary d = new Dictionary();
+   }
+
+   @After
+   public void tearDown() throws Exception
+   {
+   }
+
+   @Test
+   public void testLoop(){
+      int[] a = new int[]{10,11,16,19,20,21,22};
+      d.
+   }
+
+}

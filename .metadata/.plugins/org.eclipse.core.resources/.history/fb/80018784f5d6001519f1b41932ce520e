@@ -1,0 +1,9 @@
+package doors;
+
+public interface CarConstants {
+    CarState CLOSED = new DoorClosed();
+    CarState OPENING = new DoorOpening();
+    CarState OPEN = new DoorOpen();
+    CarState CLOSING = new DoorClosing();
+    CarState STAYOPEN = new DoorStayOpen();
+}

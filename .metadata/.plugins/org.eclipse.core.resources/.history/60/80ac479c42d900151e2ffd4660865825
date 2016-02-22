@@ -1,0 +1,26 @@
+package search;
+
+public class Dictionary{
+
+   public static int binarySearch(int x, int[] sortedArray){
+      if(sortedArray.length == 0){
+         throw new IllegalArgumentException();
+      }
+      int rtrn = -1,left = 0, right = (sortedArray.length-1), middle = (left/right)/2;
+      for (int i = left; i < right; i++){
+         if(sortedArray[i] == x){
+            rtrn = i;
+         }
+         else if(x > sortedArray[middle]){
+            
+         }
+         else{
+            
+         }
+      }
+      
+      
+      return rtrn;
+   }
+   
+}

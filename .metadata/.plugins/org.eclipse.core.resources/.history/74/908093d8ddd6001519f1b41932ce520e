@@ -1,0 +1,16 @@
+package utillity.math;
+
+public class MyMath{
+
+   public static int factorial(int n){
+      int i = 1 + sum(n-1);
+      return 0;
+   }
+   
+   public static int sum(int n){
+      return 
+   }
+   
+   
+   
+}

@@ -1,0 +1,10 @@
+package search;
+
+public class Dictionary{
+
+   public static int binarySearch(int x, int[] sortedArray){
+      int rtrn = -1,left = 0, right = (sortedArray.length-1);
+      return rtrn;
+   }
+   
+}
