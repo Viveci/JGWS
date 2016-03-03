@@ -1,0 +1,7 @@
+
+public class UpdateClock extends Thread{
+   public void run()
+   {
+      
+   }
+}

@@ -18,9 +18,8 @@ public class MyMath{
    }
    
    public static void main(String[] args){
-      System.out.println(factorial(2));
-      NaturalNumber n = new NaturalNumber(18745);
-      System.out.println(n.getValueInBase(60));      
+      NaturalNumber n = new NaturalNumber(212);
+      System.out.println(n.getValueInBase(11));
    }
    
    

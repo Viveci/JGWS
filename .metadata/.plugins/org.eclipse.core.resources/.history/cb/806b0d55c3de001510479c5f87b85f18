@@ -1,0 +1,24 @@
+import java.sql.Time;
+import java.time.LocalDateTime;
+
+public class Clock{
+
+   private int hour,minute,sec;
+   
+   public Clock(){
+      this.hour = LocalDateTime.now().getHour();
+      this.minute =  LocalDateTime.now().getMinute();
+      this.sec = LocalDateTime.now().getSecond();
+   }   
+   
+   public void set(int hour, int minute, int sec){
+      this.hour = hour;
+      this.minute = minute;
+      this.sec = sec;
+   }
+   
+   public String toString(){
+      return hour+":"+minute+":"+sec;
+   }
+   
+}

@@ -1,0 +1,11 @@
+package utility.collection;
+
+public class mítest{
+   public static void main(String[] args){
+      LinkedList<String> list = new LinkedList<>();
+      list.add("$A$");
+      list.add("asd");
+      list.add("sala");
+      System.out.println(list.get(2));
+   }
+}

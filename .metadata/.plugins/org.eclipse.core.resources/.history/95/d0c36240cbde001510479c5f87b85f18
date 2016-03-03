@@ -1,0 +1,13 @@
+package myThreads;
+
+public class MailBox implements Runnable{
+
+   private int maxFrequency;
+   private int count;
+   private static long RUNTIME = 100000;
+   
+   public MailBox(int count){
+      this.count = count;
+   }
+   
+}

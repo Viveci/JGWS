@@ -1,0 +1,8 @@
+
+public class UpdateClock extends new Runnable()
+{
+   public void run()
+   {
+      
+   }
+}

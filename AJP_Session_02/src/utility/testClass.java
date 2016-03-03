@@ -29,5 +29,8 @@ public class testClass{
       System.out.println(myText.isPalindrome());
       System.out.println(myText.isPalindromePeasant());
       
+      System.out.println("\n------Dictionary--------");
+      System.out.println(myText.isInDictionary());
+      
    }
 }

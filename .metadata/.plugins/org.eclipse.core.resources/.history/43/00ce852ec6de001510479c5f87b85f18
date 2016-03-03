@@ -1,0 +1,14 @@
+package model;
+
+public class Temperature{
+
+   public double fahrenheitToCelsious(Double fahrenheit){
+      double rtrn = (fahrenheit-32)*(5/9);
+      return rtrn;
+   }
+   
+   public double celsiusToFahrenheit(double celcsius){
+      double rtrn = celcsius
+   }
+   
+}

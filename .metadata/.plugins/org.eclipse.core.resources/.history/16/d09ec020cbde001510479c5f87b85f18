@@ -1,0 +1,6 @@
+package myThreads;
+
+public class MailBox
+{
+
+}

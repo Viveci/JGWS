@@ -1,0 +1,13 @@
+public class Clock{
+
+   private int hour,minute,sec;
+   
+   public Clock(int hour, int minute, int sec){
+      this.hour = hour;
+      this.minute = minute;
+      this.sec = sec;
+   }   
+   
+   
+   
+}

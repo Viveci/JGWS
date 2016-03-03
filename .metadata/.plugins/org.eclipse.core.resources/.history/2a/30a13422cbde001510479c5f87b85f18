@@ -1,0 +1,9 @@
+package myThreads;
+
+public class MailBox implements Runnable{
+
+   private int maxFrequency;
+   private int count;
+   private static long RUNTIME = 100000;
+   
+}

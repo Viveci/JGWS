@@ -1,0 +1,11 @@
+package utility.collection;
+
+public class mítest{
+   public static void main(String[] args){
+      LinkedList<String> list = new LinkedList<>();
+      list.add("$A$");
+      list.add("asd");
+      DoubleNode<Stirng> current = list; 
+      System.out.println(list.getNode(current, 2));
+   }
+}

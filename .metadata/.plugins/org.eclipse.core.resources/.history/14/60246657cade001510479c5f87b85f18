@@ -1,0 +1,17 @@
+package myThreads;
+
+public class Program{
+   
+   private String program;
+   private int maxFrequency;
+   private String action;
+   private int count;
+   private static long RUNTIME = 100000;
+   
+   public Program(String program, String aciton, int Count){
+      this.program = program;
+      this.action = action;
+      this.count = count;
+   }
+   
+}

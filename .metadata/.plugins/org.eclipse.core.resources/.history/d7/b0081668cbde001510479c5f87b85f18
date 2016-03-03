@@ -1,0 +1,32 @@
+package myThreads;
+
+public class MailBox implements Runnable{
+
+   private int maxFrequency;
+   private int count;
+   private static long RUNTIME = 100000;
+   
+   public MailBox(int count){
+      this.count = count;
+   }
+
+   @Override
+   public void run()
+   {
+      // TODO Auto-generated method stub
+      
+   }
+   
+   private void waitingForMails(){
+      try
+      {
+         Thread.sleep(RUNTIME/count);
+      }
+      catch (InterruptedException e)
+      {
+         // TODO Auto-generated catch block
+         e.printStackTrace();
+      }
+   }
+   
+}
