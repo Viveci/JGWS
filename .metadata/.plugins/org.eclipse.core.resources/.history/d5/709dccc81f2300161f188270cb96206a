@@ -1,0 +1,81 @@
+package view;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+import connection.Client;
+
+import javax.swing.JLabel;
+import java.awt.Font;
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
+
+public class ClientFrame extends JFrame {
+
+   private JPanel BotLayer;
+   private LoginPanel login;
+   private JPanel TopBar;
+   private JLabel Title;
+
+   private static Client client;
+
+   public static void main(String[] args) {
+      EventQueue.invokeLater(new Runnable() {
+         public void run() {
+            try {
+               ClientFrame frame = new ClientFrame();
+               frame.setVisible(true);
+            }
+            catch (Exception e) {
+               e.printStackTrace();
+            }
+         }
+      });
+   }
+
+   public ClientFrame() {
+
+      Client client = new Client();
+
+      // Basics
+      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      setBounds(0, 0, 800, 500);
+      setTitle("Via Events");
+      setResizable(false);
+
+      login = new LoginPanel();
+      Color bcg = Color.decode("#efefef");
+      setBounds(0, 0, 800, 500);
+      this.setBackground(bcg);
+      getContentPane().setLayout(null);
+      getContentPane().add(login, 0);
+
+      TopBar = new JPanel();
+      TopBar.setBackground(Color.decode("#282828"));
+      TopBar.setBounds(0, 0, 800, 50);
+      getContentPane().add(TopBar);
+      TopBar.setLayout(null);
+
+      Title = new JLabel("");
+      Image logo = new ImageIcon("C:\\Dev\\JGWS\\SEP_02\\logo.png").getImage().getScaledInstance(200, 40, Image.SCALE_SMOOTH);
+      Title.setIcon(new ImageIcon("C:\\Dev\\JGWS\\SEP_02\\logo.png"));
+      Title.setForeground(Color.WHITE);
+      Title.setFont(new Font("Calibri", Font.PLAIN, 20));
+      Title.setBounds(20, 0, 200, 50);
+      TopBar.add(Title);
+
+      login.setClient(client);
+
+   }
+
+   public static Client getClient() {
+      return ClientFrame.client;
+   }
+
+}

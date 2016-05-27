@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;AJP_Test_Exam/src/task3&apos;&#x0D;&#x0A;- Original project: &apos;AJP_AllThreads&apos;&#x0D;&#x0A;- Destination element: &apos;AJP_Test_Exam/src/task3&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     WashingHall_With_Queue_Thread.QueueADT.java&#x0D;&#x0A;     WashingHall_With_Queue_Thread.BoundedArrayQueue.java" description="Copy compilation units" destination="=AJP_Test_Exam/src&lt;task3" element1="/src&lt;WashingHall_With_Queue_Thread{QueueADT.java" element2="/src&lt;WashingHall_With_Queue_Thread{BoundedArrayQueue.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1462866228964" units="2" version="1.0"/>
+</session>

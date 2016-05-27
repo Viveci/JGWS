@@ -1,0 +1,12 @@
+package main;
+
+public class ServerMain {
+   
+   private RmiServer server;
+   private ServerFrame view;
+   
+   public serverMain(){
+      
+   }
+
+}

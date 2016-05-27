@@ -1,0 +1,8 @@
+package model.mediator;
+
+import model.model.Data;
+
+public interface Model {
+   public void addMessage(Data data);
+   public void notifyAboutMessage(Data data);
+}

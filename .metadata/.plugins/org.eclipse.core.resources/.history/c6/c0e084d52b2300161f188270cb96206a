@@ -1,0 +1,9 @@
+package view;
+
+import java.util.Observer;
+
+import controller.ClientController;
+
+public interface View extends Observer {
+   public void start(ClientController controller);
+}

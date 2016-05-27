@@ -1,0 +1,47 @@
+package RMI;
+
+import java.io.Serializable;
+import java.net.MalformedURLException;
+import java.rmi.Naming;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.util.Scanner;
+
+public class RmiClient implements Serializable, Runnable {
+   
+   private ServerInterface server;
+
+   public RmiClient() throws RemoteException {
+      super();
+      try {
+         server = (ServerInterface) Naming
+               .lookup("rmi://localhost:1099/ViaEvents");
+      }
+      catch (MalformedURLException e) {
+         e.printStackTrace();
+      }
+      catch (NotBoundException e) {
+         e.printStackTrace();
+      }
+   }
+
+   public static void main(String[] args) throws RemoteException {
+      RmiClient client = new RmiClient();
+      Thread c = new Thread(client,"Client");
+      c.start();
+   }
+
+   @Override
+   public void run() {
+      Scanner sc = new Scanner(System.in);
+      while(true){
+         try {
+            String msg = server.Auth("hello", this);
+            System.out.println("Client: "msg);
+         }
+         catch (Exception ex) {
+            ex.printStackTrace();
+         }
+      }
+   }
+}

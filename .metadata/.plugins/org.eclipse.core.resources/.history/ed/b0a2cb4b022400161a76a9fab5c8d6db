@@ -1,0 +1,16 @@
+package main;
+
+import RMI.RmiServer;
+import View.ServerFrame;
+
+public class ServerMain {
+   
+   private RmiServer server;
+   private ServerFrame view;
+   
+   public ServerMain(){
+      this.server = new RmiServer();
+      this.view = new ServerFrame();
+   }
+
+}

@@ -1,0 +1,26 @@
+package main;
+
+import java.rmi.RemoteException;
+
+import RMI.RmiServer;
+import View.ServerFrame;
+
+public class ServerMain {
+   
+   private RmiServer server;
+   private ServerFrame view;
+
+   public static void main(String[] args) {
+      try {
+         this.view = new ServerFrame();
+         view.start();
+         this.server = new RmiServer();
+         Thread c = new Thread(server);
+         c.start();
+      }
+      catch (RemoteException e) {
+         e.printStackTrace();
+      }
+   }
+   
+}

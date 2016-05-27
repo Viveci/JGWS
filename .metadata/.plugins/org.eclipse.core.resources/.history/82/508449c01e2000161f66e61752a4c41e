@@ -1,0 +1,43 @@
+package view;
+
+import java.awt.Color;
+import java.awt.Component;
+
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.ListCellRenderer;
+
+import model.Booking;
+import javax.swing.JTextPane;
+
+public class BookingCellRenderer extends JPanel implements ListCellRenderer {
+   private static final Color HIGHLIGHT_COLOR = new Color(0, 0, 128);
+
+   public BookingCellRenderer() {
+     setBounds(0, 0, 390, 90);
+     setOpaque(true);
+     setLayout(null);
+     
+     JLabel eventName = new JLabel("Event name");
+     eventName.setBounds(10, 10, 150, 20);
+     add(eventName);
+     
+     JTextPane textPane = new JTextPane();
+     textPane.setBounds(10, 40, 300, 40);
+     add(textPane);
+   }
+
+   public Component getListCellRendererComponent(JList list, Object value,
+       int index, boolean isSelected, boolean cellHasFocus) {
+     Booking entry = (Booking) value;
+     if (isSelected) {
+       setBackground(HIGHLIGHT_COLOR);
+       setForeground(Color.white);
+     } else {
+       setBackground(Color.white);
+       setForeground(Color.black);
+     }
+     return this;
+   }
+ }

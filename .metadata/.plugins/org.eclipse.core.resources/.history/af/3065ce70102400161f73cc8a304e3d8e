@@ -1,0 +1,45 @@
+package RMI;
+
+import java.rmi.AccessException;
+import java.rmi.Naming;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+
+public class RmiServer extends UnicastRemoteObject implements Runnable, ServerInterface {
+   
+   private Registry reg;
+   
+   public RmiServer() throws RemoteException{
+      try {
+         Registry reg = LocateRegistry.createRegistry(1099);
+      }
+      catch (Exception ex) {
+         ex.printStackTrace();
+      }
+   }
+
+   @Override
+   public String Auth(String msg, Object client) throws RemoteException {
+      System.out.println("toUpperCase: client = " + msg + (RmiClient)client);
+      return msg.toUpperCase();
+   }
+
+   @Override
+   public void run() {
+      try {
+         ServerInterface rmiServer = new RmiServer();
+         reg.rebind("ViaEvents", rmiServer);
+      }
+      catch (AccessException e) {
+         // TODO Auto-generated catch block
+         e.printStackTrace();
+      }
+      catch (RemoteException e) {
+         // TODO Auto-generated catch block
+         e.printStackTrace();
+      }
+      System.out.println("Starting server...");
+   }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Car.java&apos; to &apos;AJP_Session_10/src/whs&apos;&#x0D;&#x0A;- Original project: &apos;AJP_Session_09&apos;&#x0D;&#x0A;- Destination element: &apos;AJP_Session_10/src/whs&apos;&#x0D;&#x0A;- Original element: &apos;WashingHallPackage.Car.java&apos;" description="Copy compilation unit" destination="=AJP_Session_10/src&lt;whs" element1="/src&lt;WashingHallPackage{Car.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1457945576756" units="1" version="1.0"/>
+</session>

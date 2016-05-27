@@ -1,0 +1,20 @@
+package main;
+
+public class ClientMain
+{
+   public static void main(String args[])
+   {
+      try
+      {
+         Model model = new ClientModelManager();
+         View view = new ClientView();
+         Controller controller = new ClientController(model, view);
+
+         view.start(controller);
+      }
+      catch (Exception e)
+      {
+         e.printStackTrace();
+      }
+   }
+}

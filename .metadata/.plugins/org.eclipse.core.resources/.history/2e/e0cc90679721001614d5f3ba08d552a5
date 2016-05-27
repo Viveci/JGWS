@@ -1,0 +1,52 @@
+package connection;
+
+import java.net.*;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Scanner;
+import java.io.*;
+
+public class Client{
+   
+   private Socket socket;
+   private Scanner dataFromServer;
+   
+   private OutputStream outputStream;
+   private ObjectOutputStream out;
+      
+   public static String getTime() {
+      return new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance()
+            .getTime());
+   }
+   
+   public Object[] msgServer(String querry){
+      Object[] rtrn = null;
+      return rtrn;
+   }
+   
+   public void ping(String msg){
+      try {
+         out.writeObject(msg);
+      }
+      catch (IOException e) {
+         e.printStackTrace();
+      }   
+   }
+
+   public Client() {
+      try {
+         socket = new Socket("localhost", 6006);
+         
+         dataFromServer = new Scanner(socket.getInputStream());
+         
+         outputStream = socket.getOutputStream();
+         out = new ObjectOutputStream(outputStream);
+         
+      } catch (Exception e) {
+         System.out.println(e);
+      }
+   }
+   
+   
+   
+}

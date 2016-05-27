@@ -1,0 +1,27 @@
+package main;
+
+import controller.Controller;
+import controller.ServerController;
+import model.mediator.Model;
+import model.mediator.ServerModelManager;
+import view.ServerFrame;
+import view.View;
+
+public class ServerMain
+{
+   public static void main(String args[])
+   {
+      try
+      {
+         Model model = new ServerModelManager();
+         //View view = new ServerFrame();
+         //Controller controller = new ServerController(model, view);
+
+         view.start(controller);
+      }
+      catch (Exception e)
+      {
+         e.printStackTrace();
+      }
+   }
+}

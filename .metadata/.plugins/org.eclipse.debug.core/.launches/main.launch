@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/asd/src/asd/main.java"/>
+<listEntry value="/AJP_AllThreads/src/WashingHall_With_Queue_Thread/Main.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="asd.main"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="asd"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="WashingHall_With_Queue_Thread.Main"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="AJP_AllThreads"/>
 </launchConfiguration>

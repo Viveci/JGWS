@@ -1,0 +1,6 @@
+package model.mediator;
+
+public interface Model {
+   public void addMessage(Data message);
+   public void notifyAboutMessage(Data message);
+}

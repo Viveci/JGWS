@@ -1,0 +1,18 @@
+package main;
+
+import java.rmi.RemoteException;
+
+import RMI.RmiServer;
+import View.ServerFrame;
+
+public class ServerMain {
+   
+   private RmiServer server;
+   private ServerFrame view;
+   
+   public ServerMain(){
+      this.view = new ServerFrame();
+      view.start();
+   }
+
+}

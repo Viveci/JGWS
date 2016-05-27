@@ -1,0 +1,34 @@
+package model.mediator;
+
+import java.util.Observable;
+
+import chat.domain.model.Message;
+import chat.domain.model.MessageList;
+import model.model.Data;
+
+
+public class ServerModelManager extends Observable implements Model
+{
+   private ServerConnection server;
+ 
+   public ServerModelManager()
+   {
+      this.server = new ServerConnection(this);
+      new Thread(server, "Server").start();
+   }
+
+   @Override
+   public void addMessage(Data message)
+   {
+      notifyAboutMessage(message);
+   }
+
+   @Override
+   public void notifyAboutMessage(Data message)
+   {
+      super.setChanged();
+      super.notifyObservers(message);
+   }
+
+ 
+}

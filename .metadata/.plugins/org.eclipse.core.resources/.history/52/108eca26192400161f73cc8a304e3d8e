@@ -1,0 +1,38 @@
+package main;
+
+import java.net.MalformedURLException;
+import java.rmi.Naming;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+
+import RMI.RmiServer;
+import RMI.ServerInterface;
+import View.ServerFrame;
+
+public class ServerMain {
+   
+   private RmiServer server;
+   private ServerFrame view;
+   
+   public ServerMain() throws MalformedURLException{
+      try {
+         Registry reg = LocateRegistry.createRegistry(1099);
+         ServerInterface rmiServer = new RmiServer();
+         Naming.rebind("toUpperCase", rmiServer);
+         System.out.println("Starting server...");
+         this.view = new ServerFrame();
+         view.start();
+      }
+      catch (RemoteException e) {
+         e.printStackTrace();
+      }
+   }
+
+   public static void main(String[] args) throws MalformedURLException {
+      ServerMain m = new ServerMain();
+   }
+   
+   
+   
+}

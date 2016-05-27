@@ -1,0 +1,22 @@
+package main;
+
+
+
+public class ServerMain
+{
+   public static void main(String args[])
+   {
+      try
+      {
+         Model model = new ServerModelManager();
+         View view = new ServerView();
+         Controller controller = new ServerController(model, view);
+
+         view.start(controller);
+      }
+      catch (Exception e)
+      {
+         e.printStackTrace();
+      }
+   }
+}

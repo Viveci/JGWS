@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="OpenRecentFiles">
+		<item value="D:\VIA ICT\RDBS\Exercise_08.sql"/>
 		<item value="D:\VIA ICT\RDBS\Worksheet 7.sql"/>
 		<item value="D:\VIA ICT\RDBS\Worksheet 6.sql"/>
 		<item value="D:\VIA ICT\RDBS\Worksheet 5.sql"/>
 		<item value="D:\VIA ICT\RDBS\Worksheet 4.sql"/>
-		<item value="D:\VIA ICT\RDBS\Worksheet 2.sql"/>
 	</list>
 	<section name="com.dell.toadext.history.actions.HideUnpinnedHistoryItemsAction">
 		<item value="false" key="active"/>
@@ -44,14 +44,14 @@
 		</section>
 	</section>
 	<section name="com.dell.toadext.connection.monitor.AbstractConnectionMonitorView$EnableAction">
-		<item value="true" key="active"/>
+		<item value="false" key="active"/>
 	</section>
 	<section name="com.dell.toadext.schemabrowser.actions.DisplayDescribeObjectEditorAction">
 		<item value="false" key="active"/>
 	</section>
 	<section name="com.dell.toadext.editor.SqlEditor">
 		<section name="saveToFile">
-			<item value="D:\VIA ICT\RDBS\Worksheet 7.sql" key="filename"/>
+			<item value="D:\VIA ICT\RDBS\Exercise_08.sql" key="filename"/>
 			<item value="D:\VIA ICT\RDBS" key="pathname"/>
 		</section>
 	</section>
@@ -76,7 +76,7 @@
 	<section name="com.dell.toadext.postgre.detailviewer.PgConstraintsViewer">
 	</section>
 	<section name="com.dell.toadext.editor.SqlEditorExtension$HideResultSetAction">
-		<item value="true" key="active"/>
+		<item value="false" key="active"/>
 	</section>
 	<section name="com.dell.toadext.postgre.detailviewer.PgTableColumnsViewer">
 	</section>
@@ -84,15 +84,15 @@
 		<item value="false" key="active"/>
 	</section>
 	<section name="com.dell.toadext.editor.SqlEditorExtension$BottomAlignResultSet">
-		<item value="true" key="active"/>
+		<item value="false" key="active"/>
 	</section>
 	<section name="com.dell.toadext.ui.console.actions.ShowStandardLogsAction">
 		<item value="true" key="active"/>
 	</section>
 	<section name="com.dell.toadext.postgre.ui.editor.PgEditorExtension">
 		<section name="editorWeights">
-			<item value="357" key="rsWeight"/>
-			<item value="636" key="editorWeight"/>
+			<item value="211" key="rsWeight"/>
+			<item value="782" key="editorWeight"/>
 		</section>
 	</section>
 	<section name="com.dell.toadext.detailbrowser.AbstractColumnsViewer$SortColumnsAction">

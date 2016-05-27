@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;AJP_Session_10/src/whs&apos;&#x0D;&#x0A;- Original project: &apos;Session_03&apos;&#x0D;&#x0A;- Destination element: &apos;AJP_Session_10/src/whs&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     utility.collection.BoundedArrayQueue.java&#x0D;&#x0A;     utility.collection.QueueADT.java&#x0D;&#x0A;     utility.collection.ArrayQueue.java" description="Copy compilation units" destination="=AJP_Session_10/src&lt;whs" element1="/src&lt;utility.collection{BoundedArrayQueue.java" element2="/src&lt;utility.collection{QueueADT.java" element3="/src&lt;utility.collection{ArrayQueue.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1457945103380" units="3" version="1.0"/>
+</session>

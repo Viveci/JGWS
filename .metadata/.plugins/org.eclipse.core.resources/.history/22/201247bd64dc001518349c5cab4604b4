@@ -1,7 +1,0 @@
-package utility.collection;
-
-public class ArrayList<T> implements ListADT<T>{
-   
-   
-   
-}

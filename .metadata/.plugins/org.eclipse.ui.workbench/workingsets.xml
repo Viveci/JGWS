@@ -1,17 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1455193216401_3" label="SDJ_2" name="SDJ_2">
+<item elementID="=DeerAlleyAssignment" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Session_03" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Session_04" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Session_05" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Session_10" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Session_11" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Session_13" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Session_14" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Session_15" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Collections" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1455526139876_4" label="AJP_1" name="AJP_1">
+<item elementID="=AJP_Test_Exam" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Hand_In_01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=AJP_Session_02" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Hand_In_05" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Hand_In_07" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=AJP_Session_03" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=AJP_Session_04" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=AJP_Session_05" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_Session_07" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_Session_09" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_Session_10" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_Session_16" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Hand_In_04" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Hand_In_06" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Hand_In_08" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_Session_02" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_Session_04" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=AJP_Session_06" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_Session_08" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_Session_17" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_Session_19" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_Session_20" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1457518452640_5" label="CON_01" name="CON_01">
+<item elementID="=TCP" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1462865589919_7" label="AJP_Martin" name="AJP_Martin">
+<item elementID="=AJP_AllRecursiveAndIterativeExercises" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_HandIn_2.0" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_HandIn_4.0" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_Others" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_Matrixes" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_HandIn_6.0" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_HandIn_8.0" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_HandIn_1.0" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_HandIn_3.0" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_Array_Sorting" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_HandIn_5.0" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_HandIn_7.0" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_Threads" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_AllThreads" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AJP_Hand_In_1.0" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1463387462708_9" label="SEP_02" name="SEP_02">
+<item elementID="=Chat" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=SEP_02_RMI" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=SEP_02" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1440492685694_0" label="Window Working Set" name="Aggregate for window 1440492685694"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1455192962359_7" label="Window Working Set" name="Aggregate for window 1455192606461"/>
@@ -19,4 +65,26 @@
 <workingSet IMemento.internal.id="AJP_1"/>
 <workingSet IMemento.internal.id="SDJ_2"/>
 </workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1457518570464_7" label="Multiple Working Sets" name="Aggregate:AJP_1:CON_01:SDJ_2:">
+<workingSet IMemento.internal.id="AJP_1"/>
+<workingSet IMemento.internal.id="CON_01"/>
+<workingSet IMemento.internal.id="SDJ_2"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1462865725162_9" label="Multiple Working Sets" name="Aggregate:AJP_1:AJP_Martin:CON_01:SDJ_2:">
+<workingSet IMemento.internal.id="AJP_1"/>
+<workingSet IMemento.internal.id="AJP_Martin"/>
+<workingSet IMemento.internal.id="CON_01"/>
+<workingSet IMemento.internal.id="SDJ_2"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1464210835629_11" label="Multiple Working Sets" name="Aggregate:AJP_1:AJP_Martin:CON_01:SDJ_2:SEP_02:">
+<workingSet IMemento.internal.id="AJP_1"/>
+<workingSet IMemento.internal.id="AJP_Martin"/>
+<workingSet IMemento.internal.id="CON_01"/>
+<workingSet IMemento.internal.id="SDJ_2"/>
+<workingSet IMemento.internal.id="SEP_02"/>
+</workingSet>
+<mruList name="SEP_02"/>
+<mruList name="AJP_Martin"/>
+<mruList name="CON_01"/>
+<mruList name="AJP_1"/>
 </workingSetManager>

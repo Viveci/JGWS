@@ -1,0 +1,45 @@
+package view;
+
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JPanel;
+import javax.swing.JButton;
+
+public class MyBookings extends JPanel implements ActionListener {
+
+   public MyBookings(){
+      this.setBackground(Color.WHITE);
+      this.setBounds(0, 50, 800, 420);
+      setLayout(null);
+      
+      JPanel panel = new JPanel();
+      panel.setBounds(10, 10, 385, 400);
+      add(panel);
+      
+      JPanel panel_1 = new JPanel();
+      panel_1.setBounds(405, 10, 385, 300);
+      add(panel_1);
+      
+      JPanel panel_2 = new JPanel();
+      panel_2.setBounds(405, 320, 385, 90);
+      add(panel_2);
+      panel_2.setLayout(null);
+      
+      JButton btnBack = new JButton("Back");
+      btnBack.setBounds(255, 10, 120, 70);
+      panel_2.add(btnBack);
+      btnBack.addActionListener(this);
+   }
+   
+   @Override
+   public void actionPerformed(ActionEvent e) {
+      if(e.getActionCommand().equals("Back")){
+         System.out.println("Booking panel: back");
+         getParent().getComponent(0).setVisible(false);
+         getParent().add(new Dashboard(), 0);
+      }
+   }
+   
+}

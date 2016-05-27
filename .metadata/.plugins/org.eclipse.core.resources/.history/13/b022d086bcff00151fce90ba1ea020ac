@@ -1,0 +1,251 @@
+package collection.sorting;
+
+import java.lang.reflect.Array;
+
+public class Sorter
+{
+
+   // SelectionSort methods
+
+   public static void selectionSort(int[] array)
+   {
+      for (int i = 0; i < array.length; i++)
+      {
+         int indexOfMin = indexOfMin(array, i);
+         swop(array, i, indexOfMin);
+      }
+   }
+
+   private static int indexOfMin(int[] array, int i)
+   {
+      int min = Integer.MAX_VALUE, index = 0;
+      for (int j = i; j < array.length; j++)
+      {
+         if (array[j] <= min)
+         {
+            index = j;
+            min = array[j];
+         }
+      }
+      return index;
+   }
+
+   // BubbleSort methods
+
+   public static void bubbleSort(int[] array)
+   {
+      int endIndex = array.length - 1;
+      boolean swops;
+      do
+      {
+         swops = bubbleSortPass(array, endIndex);
+         endIndex--;
+      }
+      while (swops);
+   }
+
+   private static boolean bubbleSortPass(int[] array, int endIndex)
+   {
+      boolean swap = false;
+      int temp = 0;
+      for (int i = 0; i < endIndex; i++)
+      {
+         if (array[i] >= array[i + 1])
+         {
+            temp = array[i];
+            array[i] = array[i + 1];
+            array[i + 1] = temp;
+            swap = true;
+         }
+      }
+      return swap;
+   }
+
+   // InsertionSort methods
+
+   public static void insertionSort(int[] array)
+   {
+      for (int i = 1; i < array.length; i++)
+      {
+         backwardPass(array, i);
+      }
+   }
+
+   private static void backwardPass(int[] array, int i)
+   {
+      int temp = 0;
+      for (int o = i; o > 0; o--)
+      {
+         if (array[o] < array[o - 1])
+         {
+            temp = array[o - 1];
+            array[o - 1] = array[o];
+            array[o] = temp;
+         }
+      }
+   }
+
+   // MergeSort methods
+
+   public static void mergeSort(int[] array)
+   {
+      if (array.length <= 1)
+      {
+         return;
+      }
+      int middle = array.length / 2;
+      int[] leftArray = subArray(array, 0, middle - 1);
+      int[] rightArray = subArray(array, middle, array.length - 1);
+
+      mergeSort(leftArray);
+      mergeSort(rightArray);
+
+      merge(array, leftArray, rightArray);
+   }
+
+   private static void merge(int[] array, int[] leftArray, int[] rightArray)
+   {
+      int leftIndex = 0, rightIndex = 0, index = 0;
+      while (leftIndex < leftArray.length && rightIndex < rightArray.length)
+      {
+         if (leftArray[leftIndex] < rightArray[rightIndex])
+         {
+            array[index] = leftArray[leftIndex];
+            leftIndex++;
+         }
+         else
+         {
+            array[index] = rightArray[rightIndex];
+            rightIndex++;
+         }
+         index++;
+      }
+      for (int i = leftIndex; i < leftArray.length; i++)
+      {
+         array[index] = leftArray[i];
+         index++;
+      }
+      for (int i = rightIndex; i < rightArray.length; i++)
+      {
+         array[index] = rightArray[i];
+         index++;
+      }
+
+   }
+
+   private static int[] subArray(int[] originalArray, int from, int to)
+   {
+      int[] subArray = new int[to - from + 1];
+      for (int i = from; i <= to; i++)
+      {
+         subArray[i - from] = originalArray[i];
+      }
+      return subArray;
+   }
+
+   // Advanced MergeSort
+
+   public static void mergeSortAdv(int[] array)
+   {
+      mergeSortAdv(array, 0, array.length - 1);
+   }
+
+   private static void mergeSortAdv(int[] array, int from, int to)
+   {
+      if (to <= from)
+      {
+         return;
+      }
+      int middle = (from + to) / 2;
+      mergeSortAdv(array, from, middle);
+      mergeSortAdv(array, middle + 1, to);
+      merge(array, from, middle, to);
+   }
+
+   private static void merge(int[] array, int from, int middle, int to)
+   {
+      int[] leftArray = subArray(array, 0, middle - 1);
+      int[] rightArray = subArray(array, middle, array.length - 1);
+
+      int leftIndex = 0;
+      int rightIndex = middle;
+      int index = from;
+      while (leftIndex < leftArray.length && rightIndex <= to)
+      {
+      if (leftArray[leftIndex] < array[rightIndex]){
+            array[index] = leftArray[leftIndex];
+            leftIndex++;
+         }
+         else
+         {
+            array[index] = rightArray[rightIndex];
+            rightIndex++;
+         }
+         index++;
+      }
+      for (int i = leftIndex; i < leftArray.length; i++)
+      {
+         array[index] = leftArray[i];
+         index++;
+      }
+      for (int i = rightIndex; i < rightArray.length; i++)
+      {
+         array[index] = rightArray[i];
+         index++;
+      }
+   }
+
+   // General methods
+
+   private static void swop(int[] array, int i, int indexOfMin)
+   {
+      int temp = array[i];
+      array[i] = array[indexOfMin];
+      array[indexOfMin] = temp;
+   }
+
+   public static String out(int[] array)
+   {
+      String s = "{";
+      for (int i = 0; i < array.length - 1; i++)
+      {
+         s += array[i] + ",";
+      }
+      s += array[array.length - 1] + "}";
+      return s;
+   }
+
+   public static void main(String[] args)
+   {
+      int[] testArray1 = { 5, 3, 6, 8, 1, 2, 9, 7, 4, 8, 0 };
+      System.out.println("//SelectionSort algorithm");
+      System.out.println(out(testArray1));
+      selectionSort(testArray1);
+      System.out.println(out(testArray1));
+
+      System.out.println("\n//BubbleSort algorithm");
+      int[] testArray2 = { 5, 3, 6, 8, 1, 2, 9, 7, 4, 8, 0 };
+      System.out.println(out(testArray2));
+      bubbleSort(testArray2);
+      System.out.println(out(testArray2));
+
+      System.out.println("\n//InsertionSort algorithm");
+      int[] testArray3 = { 5, 3, 6, 8, 1, 2, 9, 7, 4, 8, 0 };
+      System.out.println(out(testArray3));
+      insertionSort(testArray3);
+      System.out.println(out(testArray3));
+
+      System.out.println("\n//MergeSort alrgorithm");
+      int[] testArray4 = { 5, 3, 6, 8, 1, 2, 9, 7, 4, 8, 0 };
+      System.out.println(out(testArray4));
+      mergeSort(testArray4);
+      System.out.println(out(testArray4));
+      
+      System.out.println("\n//Advanced MergeSort alrgorithm");
+      int[] testArray5 = { 5, 3, 6, 8, 1, 2, 9, 7, 4, 8, 0 };
+      System.out.println(out(testArray5));
+      mergeSortAdv(testArray5);
+      System.out.println(out(testArray5));
+   }
+
+}

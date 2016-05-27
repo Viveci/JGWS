@@ -1,0 +1,36 @@
+package RMI;
+
+import java.io.Serializable;
+import java.rmi.Naming;
+import java.rmi.RemoteException;
+
+public class RmiClient implements Serializable, Runnable {
+   
+   private ServerInterface server;
+
+   public RmiClient() throws RemoteException {
+      super();
+      try {
+         server = (ServerInterface) Naming
+               .lookup("rmi://localhost:1099/ViaEvents");
+         String msg = server.Auth("hello", this);
+         System.out.println(msg);
+      }
+      catch (Exception ex) {
+         ex.printStackTrace();
+      }
+   }
+
+   public static void main(String[] args) throws RemoteException {
+      RmiClient client = new RmiClient();
+      Thread c = new Thread(client,"Client");
+      c.start();
+   }
+
+   @Override
+   public void run() {
+      while(true){
+         
+      }
+   }
+}

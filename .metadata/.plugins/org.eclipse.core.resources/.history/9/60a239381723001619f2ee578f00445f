@@ -1,0 +1,9 @@
+package model.model;
+
+public class Data {
+   
+   private ArrayList<String> data;
+   
+   
+
+}

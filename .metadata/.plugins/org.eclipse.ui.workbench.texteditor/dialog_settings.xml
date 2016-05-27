@@ -2,12 +2,15 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="indexOf" key="selection"/>
+		<item value="throw" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="throw"/>
+			<item value="whosoever"/>
+			<item value="DataOutputStream(connectionSocket.getOutputStream());             clientSentence = inFromClient.readLine();             System.out.println(&quot;Received: &quot; + clientSentence);             capitalizedSentence = clientSentence.toUpperCase() + &apos;\n&apos;;             outToClient.writeBytes(capitalizedSentence);          }       } }"/>
 			<item value="indexOf"/>
 			<item value="getNode"/>
 			<item value="get"/>
