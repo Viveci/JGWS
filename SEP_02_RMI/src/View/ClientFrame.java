@@ -8,6 +8,9 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import controllers.ClientController;
+import controllers.Controller;
+
 import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.Image;
@@ -22,9 +25,9 @@ public class ClientFrame extends JFrame implements View {
    private JPanel TopBar;
    private JLabel Title;
    
+   public static ClientController cntrl;
 
    public ClientFrame() {
-
       // Basics
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       setBounds(0, 0, 800, 500);
@@ -52,7 +55,6 @@ public class ClientFrame extends JFrame implements View {
       Title.setFont(new Font("Calibri", Font.PLAIN, 20));
       Title.setBounds(20, 5, 200, 40);
       TopBar.add(Title);
-
    }
 
    @Override
@@ -61,9 +63,10 @@ public class ClientFrame extends JFrame implements View {
    }
 
    @Override
-   public void start() {
+   public void start(Controller cntrl) {
       try {
          ClientFrame frame = new ClientFrame();
+         this.cntrl = (ClientController)cntrl;
          frame.setVisible(true);
       }
       catch (Exception e) {

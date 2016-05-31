@@ -1,0 +1,30 @@
+package controller;
+
+import connection.MultiThreadServer;
+import model.mediator.Model;
+import view.View;
+
+public class ServerController implements Controller {
+   
+   private MultiThreadServer server;
+   private View view;
+   private SqlAdapter adapter;
+
+   public ServerController(View view, MultiThreadServer server) {
+      this.view = view;
+      this.server = server;
+   }
+
+   @Override
+   public void execute(String what) {
+      switch (what) {
+         case "auth":
+            
+            break;
+
+         default:
+            break;
+      }
+   }
+
+}

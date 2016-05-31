@@ -1,0 +1,41 @@
+package controller;
+
+import java.util.ArrayList;
+
+import SQL.SqlAdapter;
+import connection.MultiThreadServer;
+import model.mediator.Model;
+import view.View;
+
+public class ServerController implements Controller {
+   
+   private MultiThreadServer server;
+   private View view;
+   private SqlAdapter adapter;
+
+   public ServerController(View view, MultiThreadServer server) {
+      this.view = view;
+      this.server = server;
+      this.adapter = new SqlAdapter("need for speed");
+   }
+
+   @Override
+   public ArrayList<String> execute(String what) {
+      ArrayList<String> reply = new ArrayList<>();
+      String[] parseAction = what.split(":");
+      switch (what) {
+         case "auth":
+            System.out.println("authorization");
+            reply.add("Account");
+            reply.add(adapter.getAccount());
+         default:
+            break;
+      }
+      return reply;
+   }
+   
+   public String Auth(){
+      return adapter.getAccount();
+   }
+
+}

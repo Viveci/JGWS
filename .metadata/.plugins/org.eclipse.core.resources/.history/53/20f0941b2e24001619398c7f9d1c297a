@@ -1,0 +1,32 @@
+package controllers;
+
+public class ClientController{
+
+   private View view;
+   
+   //Constructors
+   public ClientController(Model model, View view){
+      this.view = view;
+      this.model = model;
+   }
+
+   @Override
+   public void execute(String what) {
+      switch (what) {
+         case "LogIn":
+            break;
+
+         case "sal":
+            System.out.println("Sal");
+            break;
+      }
+   }
+   
+   public boolean auth(String[] input){
+      boolean rtrn = false;
+      
+      model.addMessage(input[0]);
+      
+      return rtrn;
+   }
+}

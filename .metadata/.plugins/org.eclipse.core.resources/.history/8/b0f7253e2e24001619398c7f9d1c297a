@@ -1,0 +1,29 @@
+package main;
+
+import java.rmi.RemoteException;
+
+import RMI.RmiClient;
+import View.ClientFrame;
+
+public class ClientMain {
+   
+   private RmiClient client;
+   private ClientFrame view;
+   
+   public ClientMain() throws RemoteException{
+      client = new RmiClient();
+      view = new ClientFrame();
+      view.start();
+   }
+   
+   public static void main(String[] args) {
+      try {
+         ClientMain cm = new ClientMain();
+      }
+      catch (RemoteException e) {
+         e.printStackTrace();
+      }
+      System.out.println("ClientMain: Started");
+   }
+
+}

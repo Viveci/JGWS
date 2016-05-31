@@ -1,0 +1,19 @@
+package connection;
+
+import java.net.Socket;
+
+public class ServerListener implements Runnable{
+
+   public ServerListener(Socket sock) {
+      // TODO Auto-generated constructor stub
+   }
+
+   @Override
+   public void run() {
+      // TODO Auto-generated method stub
+      
+   }
+
+   
+   
+}

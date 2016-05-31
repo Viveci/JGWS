@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.ListCellRenderer;
 
-import model.model.Booking;
+import model.Booking;
 
 
 public class BookingCellRenderer extends JLabel implements ListCellRenderer {

@@ -1,0 +1,11 @@
+package SQL;
+
+public class SqlAdapter {
+   
+   private String message;
+   
+   public SqlAdapter(String s){
+      message = s;
+   }
+
+}

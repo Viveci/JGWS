@@ -1,0 +1,15 @@
+package SQL;
+
+public class SqlAdapter {
+   
+   private String message;
+   
+   public SqlAdapter(String s){
+      message = s;
+   }
+   
+   public String getAccount(){
+      return "Name:auth:123:1";
+   }
+
+}

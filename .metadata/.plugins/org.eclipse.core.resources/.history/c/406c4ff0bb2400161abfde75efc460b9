@@ -1,0 +1,27 @@
+package main;
+
+import controller.ClientController;
+import controller.Controller;
+import model.mediator.ClientModelManager;
+import model.mediator.Model;
+import view.ClientFrame;
+import view.View;
+
+public class ClientMain
+{
+   public static void main(String args[])
+   {
+      try
+      {
+         Model model = new ClientModelManager();
+         View view = new ClientFrame();
+         Controller controller = new ClientController(view);
+
+         view.start(controller);
+      }
+      catch (Exception e)
+      {
+         e.printStackTrace();
+      }
+   }
+}

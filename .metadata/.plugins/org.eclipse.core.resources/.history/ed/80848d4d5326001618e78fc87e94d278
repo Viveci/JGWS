@@ -1,0 +1,32 @@
+package connection;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.net.Socket;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Scanner;
+
+public class ClientListener implements Runnable{
+
+   private ObjectInputStream inFromServer;
+   private Socket socket;
+
+   public ClientListener(Socket sock){
+      System.out.println("ClientListener: constructor");
+      this.socket = sock;
+   }
+
+   public void run() {
+      try {
+         inFromServer = socket.getInputStream()
+         System.out.println("ClientListener: ObjectInputStream");
+      }
+      catch (IOException e) {
+         e.printStackTrace();
+      }
+      System.out.println("ClientListener: Running..");
+   }
+
+}

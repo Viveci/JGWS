@@ -1,0 +1,18 @@
+package connection;
+
+import java.net.Socket;
+
+public class ServerListener implements Runnable {
+   
+   private Soceker socket;
+
+   public ServerListener(Socket sock) {
+      
+   }
+
+   @Override
+   public void run() {
+      
+   }
+
+}

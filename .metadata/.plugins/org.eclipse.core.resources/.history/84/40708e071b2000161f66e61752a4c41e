@@ -1,8 +1,0 @@
-package model;
-
-public class Booking {
-
-   private int bookingID;
-   private int createdBy
-   
-}

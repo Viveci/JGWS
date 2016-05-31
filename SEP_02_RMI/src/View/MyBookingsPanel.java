@@ -9,8 +9,6 @@ import javax.swing.JPanel;
 import javax.swing.JButton;
 import javax.swing.JList;
 import javax.swing.JScrollPane;
-
-import model.model.Booking;
 import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -18,6 +16,8 @@ import java.awt.GridLayout;
 import javax.swing.JTextField;
 
 import com.toedter.calendar.JCalendar;
+
+import model.Booking;
 
 import javax.swing.JComboBox;
 

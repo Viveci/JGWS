@@ -1,0 +1,35 @@
+package controller;
+
+import connection.Client;
+import model.mediator.Model;
+import view.View;
+
+public class ClientController implements Controller {
+
+   private View view;
+   private Client client;
+   
+   //Constructors
+   public ClientController(View view, Client client){
+      this.view = view;
+      this.client = client;
+   }
+
+   @Override
+   public void execute(String what) {
+      switch (what) {
+         case "LogIn":
+            break;
+
+         case "sal":
+            System.out.println("Sal");
+            break;
+      }
+   }
+   
+   public boolean auth(String input){
+      boolean rtrn = false;
+      client.send(input);
+      return rtrn;
+   }
+}

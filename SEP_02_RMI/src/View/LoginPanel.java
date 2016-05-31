@@ -12,6 +12,8 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
+import controllers.ClientController;
+
 public class LoginPanel extends JPanel implements ActionListener {
 
    //TextField
@@ -25,6 +27,8 @@ public class LoginPanel extends JPanel implements ActionListener {
    //JButtons
    private JButton ButtonLogin;
    private JButton ButtonRegister;
+   
+   private ClientController cntrl;
       
    public LoginPanel() {
       
@@ -81,6 +85,7 @@ public class LoginPanel extends JPanel implements ActionListener {
       //Login option
       if(arg0.getActionCommand().equals("Login")){
          String[] msg = {getInputEmail().getText(), getInputPassword().getText()};
+         ClientFrame.cntrl.auth(msg);
          if(true){
             getParent().getComponent(0).setVisible(false);
             getParent().add(new Dashboard(),0);

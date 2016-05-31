@@ -1,0 +1,18 @@
+package controllers;
+
+import View.View;
+
+public class ClientController{
+
+   private View view;
+   
+   //Constructors
+   public ClientController(){
+   }
+   
+   public boolean auth(String[] input){
+      boolean rtrn = false;
+      
+      return rtrn;
+   }
+}

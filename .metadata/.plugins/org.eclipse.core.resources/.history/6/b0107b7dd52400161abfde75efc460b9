@@ -1,0 +1,54 @@
+package connection;
+
+import java.net.*;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Scanner;
+import java.io.*;
+
+public class Client implements Runnable {
+
+   private Socket socket;
+
+   private OutputStream outputStream;
+   private ObjectOutputStream out;
+
+   private ClientListener listener;
+
+   public Client() {
+      System.out.println("Client has been constructed");
+      
+   }
+
+   public void send(String msg) {
+      try {
+         out.writeObject(msg);
+      }
+      catch (IOException e) {
+         e.printStackTrace();
+      }
+   }
+
+   @Override
+   public void run() {
+      try {
+         socket = new Socket("localhost", 6007);
+
+         outputStream = socket.getOutputStream();
+         out = new ObjectOutputStream(outputStream);
+
+         listener = new ClientListener(socket);
+         Thread l = new Thread(listener);
+         l.start();
+      }
+      catch (Exception e) {
+         System.out.println(e);
+      }
+   }
+   
+   public static String getTime() {
+      return new SimpleDateFormat("HH:mm:ss")
+            .format(Calendar.getInstance().getTime());
+   }
+
+}

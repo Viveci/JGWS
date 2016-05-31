@@ -1,0 +1,36 @@
+package controller;
+
+import SQL.SqlAdapter;
+import connection.MultiThreadServer;
+import model.mediator.Model;
+import view.View;
+
+public class ServerController implements Controller {
+   
+   private MultiThreadServer server;
+   private View view;
+   private SqlAdapter adapter;
+
+   public ServerController(View view, MultiThreadServer server) {
+      this.view = view;
+      this.server = server;
+      this.adapter = new SqlAdapter("need for speed");
+   }
+
+   @Override
+   public String execute(String what) {
+      String rtrn = "-1";
+      switch (what) {
+         case "auth":
+            rtrn = adapter.getAccount();
+         default:
+            break;
+      }
+      return rtrn;
+   }
+   
+   public String Auth(){
+      return adapter.getAccount();
+   }
+
+}

@@ -10,6 +10,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import javax.swing.JTextPane;
+
+import controllers.Controller;
+
 import javax.swing.JEditorPane;
 import javax.swing.JTextArea;
 
@@ -53,7 +56,7 @@ public class ServerFrame extends JFrame implements View {
    }
 
    @Override
-   public void start() {
+   public void start(Controller cntrl) {
       try {
          ServerFrame frame = new ServerFrame();
          frame.setVisible(true);

@@ -4,16 +4,19 @@ import java.rmi.RemoteException;
 
 import RMI.RmiClient;
 import View.ClientFrame;
+import controllers.ClientController;
 
 public class ClientMain {
    
    private RmiClient client;
    private ClientFrame view;
+   private ClientController cntrl;
    
    public ClientMain() throws RemoteException{
       client = new RmiClient();
+      cntrl = new ClientController();
       view = new ClientFrame();
-      view.start();
+      view.start(cntrl);
    }
    
    public static void main(String[] args) {

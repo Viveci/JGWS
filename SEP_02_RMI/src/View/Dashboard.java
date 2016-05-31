@@ -3,8 +3,6 @@ package View;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
-import model.model.Booking;
-
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,6 +16,9 @@ import java.awt.Image;
 import javax.swing.JButton;
 import javax.swing.JList;
 import com.toedter.calendar.JCalendar;
+
+import model.Booking;
+
 import java.awt.Dimension;
 
 public class Dashboard extends JPanel implements ActionListener {

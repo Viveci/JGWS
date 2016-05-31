@@ -1,0 +1,57 @@
+package connection;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
+import java.net.Socket;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+public class ServerListener implements Runnable {
+   
+   private Socket socket;
+   private InputStream inputStream;
+   private ObjectInputStream in;
+   private OutputStream outstream;
+   private ObjectOutputStream out;
+
+   public ServerListener(Socket sock) {
+      this.socket = sock;
+      try {
+         inputStream = socket.getInputStream();
+         ObjectInputStream in = new ObjectInputStream(inputStream);
+         
+         outstream = socket.getOutputStream();
+         out = new ObjectOutputStream(outstream);
+      }
+      catch (IOException e) {
+         // TODO Auto-generated catch block
+         e.printStackTrace();
+      }
+   }
+
+   @Override
+   public void run() {
+      try {
+         while (true) {
+            msg = (String) in.readObject();
+            System.out.println(getTime() + ": " + msg);
+            out.writeObject(new String("asd"));
+         }
+      }
+      catch (IOException e) {
+         e.printStackTrace();
+      }
+      catch (ClassNotFoundException e) {
+         e.printStackTrace();
+      }
+   }
+   
+   public static String getTime() {
+      return new SimpleDateFormat("HH:mm:ss")
+            .format(Calendar.getInstance().getTime());
+   }
+
+}
