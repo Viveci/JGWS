@@ -1,0 +1,26 @@
+package SQL;
+
+public class SqlAdapter {
+   
+   private String message;
+   
+   public SqlAdapter(String s){
+      message = s;
+   }
+   
+   public String getAccount(){
+      return "Name:auth:123:1";
+   }
+   
+   public boolean registerAccount(String input){
+      return true;
+   }
+   
+   public String[] getDashBoardData(String input){
+      String[] rtrn = {"Márton:auth:123:1",""};
+      
+      
+      return null;
+   }
+
+}

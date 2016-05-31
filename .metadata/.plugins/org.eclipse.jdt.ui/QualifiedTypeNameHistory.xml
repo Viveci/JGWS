@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.swing.text.DateFormatter"/>
-<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="javax.swing.SpinnerDateModel"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="javax.swing.JPanel"/>
 <fullyQualifiedTypeName name="view.BookingPanel"/>
-<fullyQualifiedTypeName name="view.Dashboard"/>
 <fullyQualifiedTypeName name="view.MyBookingsPanel"/>
 <fullyQualifiedTypeName name="view.RegisterPanel"/>
 <fullyQualifiedTypeName name="model.Booking"/>
@@ -55,9 +51,13 @@
 <fullyQualifiedTypeName name="view.ServerFrame"/>
 <fullyQualifiedTypeName name="SQL.SqlAdapter"/>
 <fullyQualifiedTypeName name="controller.ClientController"/>
-<fullyQualifiedTypeName name="view.ClientFrame"/>
 <fullyQualifiedTypeName name="java.net.SocketException"/>
 <fullyQualifiedTypeName name="java.util.Observable"/>
 <fullyQualifiedTypeName name="java.util.Observer"/>
 <fullyQualifiedTypeName name="connection.ClientListener"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="model.model.Account"/>
+<fullyQualifiedTypeName name="view.Dashboard"/>
+<fullyQualifiedTypeName name="view.ClientFrame"/>
 </qualifiedTypeNameHistroy>
