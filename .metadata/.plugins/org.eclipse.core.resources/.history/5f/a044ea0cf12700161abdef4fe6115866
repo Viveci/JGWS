@@ -1,0 +1,41 @@
+package model.model;
+
+import java.io.Serializable;
+import java.sql.Timestamp;
+import java.util.Date;
+
+public class Booking implements Serializable{
+
+   private int bookingID;
+   private String creatorID;
+   private int eventID;
+   private String RoomNumber;
+   private Date reservationDate;
+   private Timestamp to;
+   private Timestamp from;
+   
+   /*bookingsid INT PRIMARY KEY,
+   createdby VARCHAR NOT NULL,
+   eventid INT,
+   roomnumber VARCHAR,
+   reservationdate DATE NOT NULL,
+   hoursfrom TIME NOT NULL,
+   hoursto TIME NOT NULL,*/
+   
+   public Booking(int bookingID, String creatorID, String roomNumber, Date reservationDate, Date to) {
+      this.bookingID = bookingID;
+      this.creatorID = creatorID;
+      RoomNumber = roomNumber;
+      this.reservationDate = reservationDate;
+      this.to = to;
+   }
+
+   public Booking(int bookingID, String creatorID, int eventID, Date reservationDate, Date to) {
+      this.bookingID = bookingID;
+      this.creatorID = creatorID;
+      this.eventID = eventID;
+      this.reservationDate = reservationDate;
+      this.to = to;
+   }
+   
+}

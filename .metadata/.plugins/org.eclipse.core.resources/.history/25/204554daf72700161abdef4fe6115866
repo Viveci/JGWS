@@ -1,0 +1,66 @@
+package controller;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+
+import SQL.SqlAdapter;
+import connection.MultiThreadServer;
+import model.mediator.Model;
+import view.View;
+
+public class ServerController implements Controller {
+
+   private MultiThreadServer server;
+   private View view;
+   private SqlAdapter adapter;
+
+   public ServerController(View view, MultiThreadServer server) {
+      this.view = view;
+      this.server = server;
+      this.adapter = new SqlAdapter("need for speed");
+   }
+
+   @Override
+   public ArrayList<String> execute(String what) {
+      ArrayList<String> reply = new ArrayList<>();
+      String[] parseAction = what.split(":");
+      switch (parseAction[0]) {
+         case "auth":
+            System.out.println(getTime() + ":ServerController: Beggining authorization...");
+            reply.add("Account");
+            reply.add(adapter.getAccount());
+            break;
+         case "reg":
+            System.out.println(getTime() + ":ServerController: Registration....");
+            reply.add("Register");
+            reply.add(adapter.registerAccount(null) + "");
+            break;
+         case "dash":
+            System.out.println(getTime() + ":ServerController: Dashboard data....");
+            reply.add("Dashboard");
+            String[] sql = adapter.getDashBoardData(parseAction[1]);
+            for (int i = 0; i < sql.length; i++) {
+               reply.add(sql[i]);
+            }
+            break;
+         case "booking":
+            System.out.println(getTime() + ":ServerController: inserting new booking ....");
+            reply.add("Booking");
+            break;
+         default:
+            break;
+      }
+      return reply;
+   }
+
+   public String Auth() {
+      return adapter.getAccount();
+   }
+
+   public static String getTime() {
+      return new SimpleDateFormat("HH:mm:ss")
+            .format(Calendar.getInstance().getTime());
+   }
+
+}

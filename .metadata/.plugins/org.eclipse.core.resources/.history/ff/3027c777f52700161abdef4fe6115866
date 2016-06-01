@@ -1,0 +1,22 @@
+package model.model;
+
+import java.io.Serializable;
+import java.sql.Date;
+
+public class Event implements Serializable{
+
+   /*eventid  INT PRIMARY KEY ,
+   eventname VARCHAR(20) NOT NULL, 
+   capacity INT NOT NULL,
+   eventdescription VARCHAR(300) NOT NULL,
+   signupdeadline TIMESTAMP,
+   roomnumber VARCHAR(10) NOT NULL,*/
+   
+   private int eventId;
+   private String eventName;
+   private int capacity;
+   private String eventDescription;
+   private Date signupDeadline;
+   private String roomNumber;
+   
+}
